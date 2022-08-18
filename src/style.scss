@@ -8,9 +8,7 @@
 }
 
 body {
-    font-family: $main_font;
-    font-style: normal;
-    font-weight: 500;
+    font: normal 500 $font_size $main_font;
 }
 
 .sign_in, .sign_up {
@@ -18,4 +16,16 @@ body {
     height: 450px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }

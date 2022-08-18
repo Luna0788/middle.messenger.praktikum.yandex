@@ -1,0 +1,21 @@
+@use '../../variables' as *;
+
+.field {
+    width: 280px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.field_input {
+    border: 0;
+    border-bottom: 1px solid $main_color;
+    outline:none;
+    padding: 7px 0;
+}
+
+.field_label {
+    font-size: 9px;
+    line-height: 9px;
+    color: $grey_text_color;
+}

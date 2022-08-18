@@ -1,6 +1,7 @@
 @import "../../variables";
 
 .button {
+    cursor: pointer;
     background-color: $main_color;
     color: white;
     font-size: 13px;
