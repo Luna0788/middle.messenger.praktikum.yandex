@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/Luna0788/middle.messenger.praktikum.yandex/issues"
   },
-  "homepage": "https://github.com/Luna0788/middle.messenger.praktikum.yandex#readme"
+  "homepage": "https://github.com/Luna0788/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
 }
