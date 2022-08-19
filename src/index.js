@@ -1,6 +1,7 @@
 import SignInPage from './pages/sign_in/sign_in';
 import SignUpPage from './pages/sign_up/sign_up';
 import ErrorPage from './pages/error/error'
+import ChatPage from './pages/chat/chat'
 import './style.scss';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
         case '/500':
             page = ErrorPage("500", "Мы уже фиксим");
             break;
+        case '/chat':
+            page = ChatPage;
+            break;   
         default:
             page = ErrorPage("404", "Страница не найдена");
             break;

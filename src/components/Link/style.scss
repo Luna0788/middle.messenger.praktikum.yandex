@@ -1,9 +1,22 @@
 @use '../../variables' as *;
 
+.link_wrapper {
+    padding: 16px 0;
+    text-align: center;
+}
+
 .link {
+    text-decoration: none;
+}
+
+.link__blue {
     font-size: 11px;
     line-height: 11px;
     color: $main_color;
-    text-decoration: none;
-    text-align: center;
+}
+
+.link__grey {
+    font-size: 12px;
+    line-height: 12px;
+    color: $grey_text_color;
 }

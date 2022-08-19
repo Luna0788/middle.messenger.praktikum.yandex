@@ -1,0 +1,22 @@
+@use './../../variables' as *;
+
+.chat_conteiner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 720px;
+    display: flex;
+    overflow: hidden;
+    border: 1px $grey_borders;
+}
+
+.chat_list {
+    background-color: $grey_background_light;
+    border-right: 1px solid $grey_borders;
+    flex: 30%;
+    padding: 0 10px;
+}
+
+.chatting {
+    flex:70%;
+}
