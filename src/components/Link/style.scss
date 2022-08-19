@@ -1,0 +1,8 @@
+@use '../../variables' as *;
+
+.link {
+    font-size: 11px;
+    line-height: 11px;
+    color: $main_color;
+    text-decoration: none;
+}
