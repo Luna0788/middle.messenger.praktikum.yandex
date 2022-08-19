@@ -1,5 +1,14 @@
 <div class="sign_up">
-    <p>Регистрация</p>
-    <p>Инпуты логин, пароль...</p>
-    {{> button text="Зарегистрироваться" }}
+    <h1 class="singup_title">Регистрация</h1>
+    <form class="signup_form">
+        <div class="signup_form__fields">
+            {{#each signup_fields}}
+                {{> input name=name label=label type=type placeholder=placeholder}}
+            {{/each}} 
+        </div>
+        <div class="signup_form__buttons">
+            {{> button text="Зарегистрироваться" }}
+        </div>
+    </form>
+    {{> link className='link__blue' text='Войти?' href='/sign_in' }}
 </div>

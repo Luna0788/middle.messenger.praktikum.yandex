@@ -1,9 +1,14 @@
 <div class="sign_in">
-    <h1 class="sing-in_title">Вход</h1>
-    
-    {{> input name='login' label='Логин' type='text' placeholder=' '}}
-    
-    {{> button text='Авторизоваться'}}
-
-    {{> link className='link__blue' text='Нет аккаунта?' href='/pages/sign_up' }}
+    <h1 class="singin_title">Вход</h1>
+    <form class="signin_form">
+        <div class="signin_form__fields">
+            {{#each signin_fields}}
+                {{> input name=name label=label type=type placeholder=placeholder}}
+            {{/each}} 
+        </div>
+        <div class="signin_form__buttons">
+            {{> button text='Авторизоваться'}}
+        </div>
+    </form>
+    {{> link className='link__blue' text='Нет аккаунта?' href='/sign_up' }}
 </div>

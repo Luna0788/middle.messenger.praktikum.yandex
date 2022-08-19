@@ -1,22 +1,27 @@
-import sign_in_tpl from './pages/sign_in/sign_in.hbs';
-import sign_up_tpl from './pages/sign_up/sign_up.hbs';
-import './components/button';
-import './components/input';
-import './components/Link';
+import SignInPage from './pages/sign_in/sign_in';
+import SignUpPage from './pages/sign_up/sign_up';
+import ErrorPage from './pages/error/error'
 import './style.scss';
 
 window.addEventListener('DOMContentLoaded', () => {
     const main = document.querySelector('.main');
     const path = window.location.pathname;
+    console.log("Path:" + path);
     switch (path) {
-        case '/pages/sign_in':
-            page = sign_in_tpl();
+        case '/sign_in':
+            page = SignInPage;
             break;
-        case '/pages/sign_up':
-            page = sign_up_tpl();
+        case '/sign_up':
+            page = SignUpPage;
+            break;
+        case '/404':
+            page = ErrorPage("404", "Не туда попали");
+            break;
+        case '/500':
+            page = ErrorPage("500", "Мы уже фиксим");
             break;
         default:
-            page = sign_in_tpl();
+            page = ErrorPage("404", "Страница не найдена");
             break;
     }
     main.innerHTML = page;
