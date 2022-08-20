@@ -34,10 +34,6 @@
     border-bottom: 1px solid $grey_borders;
 }
 
-.chat-checker {
-   // display: none;
-}
-
 .chat-checker:checked {
     background-color: $background_active;
 }
