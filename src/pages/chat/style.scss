@@ -19,4 +19,25 @@
 
 .chatting {
     flex:70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.chat_link_wrapper {
+    padding: 16px 0;
+    text-align: right;
+}
+
+.chat_list_header {
+    border-bottom: 1px solid $grey_borders;
+}
+
+.chat-checker {
+   // display: none;
+}
+
+.chat-checker:checked {
+    background-color: $background_active;
 }
