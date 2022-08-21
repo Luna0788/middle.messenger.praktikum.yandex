@@ -1,0 +1,45 @@
+@use '../../variables' as *;
+
+.profile-foto_img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    margin:auto;
+    display: inline-flex;
+	position: relative;
+}
+
+.profile-foto_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-foto_text{
+    display: none;
+}
+
+.profile-foto_text p {
+    padding: 30px;
+}
+
+.profile-foto_img:hover > .profile-foto_text  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 14px;
+    color: #FFF;
+    position: absolute;               
+    left: 50%;                        
+    top: 50%;                        
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.profile_foto_upload_container input {
+    display: none;
+}
