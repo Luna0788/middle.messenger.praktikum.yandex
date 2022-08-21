@@ -1,0 +1,22 @@
+@use '../../variables' as *;
+
+.profile_field {
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid $grey_borders;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.profile_field_input {
+    border: 0;
+    text-align: right;
+    outline:none;
+    color: $grey_text_color;
+}
+
+.profile_field_label {
+    color: $dark_text_color;
+}

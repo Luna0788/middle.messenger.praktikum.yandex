@@ -15,7 +15,9 @@
                 </h1>
             </div>
             <div class="profile_info">
-                Inputs...
+                {{#each profile_fields}}
+                    {{> profile_input name=name label=label type=type value=value}}
+                {{/each}}
             </div>
             <div class="profile_links">
                 <div class="profile_link-change">

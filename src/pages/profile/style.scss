@@ -25,7 +25,6 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 60px;
 }
 
 .profile_main_container {
@@ -34,6 +33,18 @@
 
 .profile_main_header {
     text-align: center;
+    padding: 60px 0;
+}
+
+.profile_name {
+    font-size: 16px;
+    line-height: 16px;
+    color: $dark_text_color;
+    padding: 21px 0;
+}
+
+.profile_links {
+    padding: 39px 0;
 }
 
 .profile_link-change, .profile_link-exit {
