@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.round_button {
+    cursor: pointer;
+    background-color: $main_color;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+
+.round_button svg {
+    display: inline-block;
+    vertical-align: middle;
+}
