@@ -1,9 +1,8 @@
-import chat_tpl from './chat.hbs';
+import profile_tpl from './profile.hbs';
 
 import './style.scss';
 
 import avatar from '../../static/ava.png'
-
 
 const data = {
     chat_list: [
@@ -34,6 +33,6 @@ const data = {
     ]
 };
 
-const page = chat_tpl(data);
+const page = profile_tpl(data);
 
 export default page;

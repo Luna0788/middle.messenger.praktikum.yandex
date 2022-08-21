@@ -1,7 +1,10 @@
+import './components';
 import SignInPage from './pages/sign_in/sign_in';
 import SignUpPage from './pages/sign_up/sign_up';
-import ErrorPage from './pages/error/error'
-import ChatPage from './pages/chat/chat'
+import ErrorPage from './pages/error/error';
+import ChatPage from './pages/chat/chat';
+import ProfilePage from './pages/profile/profile';
+
 import './style.scss';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
             break;
         case '/chat':
             page = ChatPage;
-            break;   
+            break; 
+        case '/profile':
+            page = ProfilePage;
+            break;
         default:
             page = ErrorPage("404", "Страница не найдена");
             break;

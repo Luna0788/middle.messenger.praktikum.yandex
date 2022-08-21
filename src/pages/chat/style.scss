@@ -37,3 +37,7 @@
 .chat-checker:checked {
     background-color: $background_active;
 }
+
+.chatting p {
+    color: $grey_text_color;
+}

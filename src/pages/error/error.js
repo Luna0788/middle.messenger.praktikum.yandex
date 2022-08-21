@@ -1,5 +1,5 @@
 import error_tpl from './error.hbs';
-import '../../components/Link';
+
 import './style.scss';
 
 const page = (type_error, message) => error_tpl({

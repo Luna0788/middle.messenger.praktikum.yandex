@@ -1,0 +1,45 @@
+@use './../../variables' as *;
+
+.profile_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 720px;
+    display: flex;
+}
+
+.back-button_container_wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $grey_background_light;
+    border-right: 1px solid $grey_borders;
+    padding: 0 18px;
+}
+
+.back-button_container {
+    
+}
+
+.profile_main_container_wrapper {
+    width: 100%; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 60px;
+}
+
+.profile_main_container {
+    min-width: 510px;
+}
+
+.profile_main_header {
+    text-align: center;
+}
+
+.profile_link-change, .profile_link-exit {
+    padding: 10px 0;
+}
+
+.profile_link-change {
+    border-bottom: 1px solid $grey_borders;
+}

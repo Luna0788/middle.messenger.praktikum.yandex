@@ -1,0 +1,35 @@
+<div class="profile_container">
+    <div class="back-button_container_wrapper">
+        <div class="back-button_container">
+            <button onclick="document.location='/chat'">Назад</button>
+        </div>
+    </div>
+    <div class="profile_main_container_wrapper">
+        <div class="profile_main_container">
+            <div class="profile_main_header">
+                <div class="profile_avatar-comteiner">
+                    Аватарка
+                </div>
+                <h1 class="profile_name">
+                    {{ name }}
+                </h1>
+            </div>
+            <div class="profile_info">
+                Inputs...
+            </div>
+            <div class="profile_links">
+                <div class="profile_link-change">
+                    {{>link className="link__blue_big" href="#" text="Изменить данные"}}
+                </div>
+                
+                <div class="profile_link-change">
+                    {{>link className="link__blue_big" href="#" text="Изменить пароль"}}
+                </div>
+                
+                <div class="profile_link-exit">
+                    {{>link className="link__red" href="/sign_in" text="Выйти"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

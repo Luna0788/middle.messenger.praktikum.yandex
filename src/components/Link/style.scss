@@ -15,3 +15,22 @@
     line-height: 12px;
     color: $grey_text_color;
 }
+
+.link__blue_big {
+    font-size: 13px;
+    line-height: 13px;
+    color: $main_color;
+}
+
+.link__red {
+    font-size: 13px;
+    line-height: 13px;
+    color: $red_text_color;
+}
+
+.link__blue_underlined {
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: underline;
+    color: $main_color;
+}
