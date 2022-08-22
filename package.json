@@ -2,6 +2,14 @@
   "engines": {
     "node": "v16.14.2"
   },
+  "targets": {
+    "default": {
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
+  },
+
   "name": "messendger",
   "version": "1.0.0",
   "description": "---",
