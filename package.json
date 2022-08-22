@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "engines": {
     "node": "v16.14.2"
   },
@@ -11,8 +10,6 @@
     }
   },
 
-=======
->>>>>>> c70ea6d (fix: delete engines from package.json)
   "name": "messendger",
   "version": "1.0.0",
   "description": "---",
