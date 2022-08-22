@@ -7,32 +7,39 @@ import ProfilePage from './pages/profile/profile';
 
 import './style.scss';
 
-window.addEventListener('DOMContentLoaded', () => {
+function render () {
     const main = document.querySelector('.main');
-    const path = window.location.pathname;
-    console.log("Path:" + path);
+    const path = window.location.hash;
+    let page;
     switch (path) {
-        case '/sign_in':
+        case '#sign_in':
             page = SignInPage;
             break;
-        case '/sign_up':
+        case '#sign_up':
             page = SignUpPage;
             break;
-        case '/404':
+        case '#404':
             page = ErrorPage("404", "Не туда попали");
             break;
-        case '/500':
+        case '#500':
             page = ErrorPage("500", "Мы уже фиксим");
             break;
-        case '/chat':
+        case '#chat':
             page = ChatPage;
             break; 
-        case '/profile':
+        case '#profile':
             page = ProfilePage;
             break;
         default:
-            page = ErrorPage("404", "Страница не найдена");
+            page = SignInPage;
             break;
     }
     main.innerHTML = page;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    render();
+});
+window.addEventListener('hashchange', () => {
+    render();
 });
