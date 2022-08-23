@@ -1,9 +1,9 @@
-import profile_tpl from './profile.hbs';
+import ProfileTpl from './profile.hbs';
 
 import './style.scss';
 
-import {profile_data} from './data';
+import {profileData} from './data';
 
-const page = profile_tpl(profile_data);
+const page = ProfileTpl(profileData);
 
 export default page;

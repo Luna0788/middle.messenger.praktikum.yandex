@@ -13,7 +13,7 @@
 .profile_field_input {
     border: 0;
     text-align: right;
-    outline:none;
+    outline: thin rgba($color: #FFF, $alpha: .1);
     color: $grey_text_color;
 }
 

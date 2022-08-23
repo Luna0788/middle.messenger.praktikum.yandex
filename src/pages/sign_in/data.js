@@ -1,4 +1,4 @@
-export const signin_data = {
+export const signinData = {
     signin_fields:[
         {
             name: "login",

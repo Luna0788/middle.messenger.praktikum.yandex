@@ -1,6 +1,6 @@
 import avatar from '../../static/ava_big.png';
 
-export const profile_data = {
+export const profileData = {
     profile_foto_src: avatar,
     name: "Иван",
     profile_fields:[

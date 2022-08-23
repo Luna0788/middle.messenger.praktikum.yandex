@@ -1,4 +1,4 @@
-export const signup_data = {
+export const signupData = {
     signup_fields:[
         {
             name: "email",

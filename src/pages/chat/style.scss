@@ -17,7 +17,7 @@
     padding: 0 10px;
 }
 
-.chatting {
+.chat {
     flex:70%;
     display: flex;
     flex-flow: column nowrap;
@@ -38,6 +38,6 @@
     background-color: $background_active;
 }
 
-.chatting p {
+.chat_no-chat-selected{
     color: $grey_text_color;
 }

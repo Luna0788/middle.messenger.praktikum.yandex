@@ -1,4 +1,4 @@
-import chat_tpl from './chat.hbs';
+import ChatTpl from './chat.hbs';
 
 import './style.scss';
 
@@ -34,6 +34,6 @@ const data = {
     ]
 };
 
-const page = chat_tpl(data);
+const page = ChatTpl(data);
 
 export default page;

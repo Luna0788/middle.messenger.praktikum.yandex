@@ -1,9 +1,9 @@
-import error_tpl from './error.hbs';
+import ErrorTpl from './error.hbs';
 
 import './style.scss';
 
-const page = (type_error, message) => error_tpl({
-    error_type: type_error,
+const page = (typeError, message) => ErrorTpl({
+    error_type: typeError,
     error_message: message
 });
 

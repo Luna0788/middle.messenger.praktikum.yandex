@@ -1,8 +1,8 @@
-import sign_in_tpl from './sign_in.hbs';
-import {signin_data} from './data';
+import SignInTpl from './sign_in.hbs';
+import {signinData} from './data';
 
 import './style.scss';
 
-const page = sign_in_tpl(signin_data);
+const page = SignInTpl(signinData);
 
 export default page;

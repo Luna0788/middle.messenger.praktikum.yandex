@@ -1,6 +1,6 @@
 @use '../../variables' as *;
 
-.profile-foto_img {
+.profile-foto_img-wrapper {
     width: 130px;
     height: 130px;
     overflow: hidden;
@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-.profile-foto_img img {
+.profile-foto_img{
     width: 100%;
     height: 100%;
 }
@@ -20,11 +20,8 @@
     display: none;
 }
 
-.profile-foto_text p {
-    padding: 30px;
-}
 
-.profile-foto_img:hover > .profile-foto_text  {
+.profile-foto_img-wrapper:hover > .profile-foto_text  {
     display: flex;
     justify-content: center;
     align-items: center;

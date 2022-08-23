@@ -1,7 +1,6 @@
 @use '../../variables' as *;
 
 .field {
-    
     border: 0;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
 .field_input {
     border: 0;
     border-bottom: 1px solid $main_color;
-    outline:none;
+    outline: thin rgba($color: #FFF, $alpha: .1);
     padding: 7px 0;
 }
 
